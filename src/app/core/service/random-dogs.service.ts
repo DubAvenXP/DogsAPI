@@ -1,0 +1,15 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from './../../../environments/environment.prod';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class RandomDogsService {
+
+  constructor(private http: HttpClient) { }
+
+  getRandomDogs(){
+    return this.http.get(environment.BASE_URL);
+  }
+}
