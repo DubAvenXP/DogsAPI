@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DogsAPI"
+    }
+  },
+  "defaultProject": "DogsAPI",
+  "cli": {
+    "analytics": false
+  }
 }
