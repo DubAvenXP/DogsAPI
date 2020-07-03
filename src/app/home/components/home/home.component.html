@@ -1,4 +1,9 @@
-<div>{{this.dogs.status}}</div>
-<div *ngFor="let dog of this.dogs.message">
-    <img [src]="dog" alt="">
-</div>
+<section class="main_posts">
+    <div class="main_posts--item" *ngFor="let dog of this.dogs.message">
+        <img class="main_post--img" [src]="dog" alt="">
+        <div class="main_post--description">
+            <span>💖</span>
+            <button>Adoptame</button>
+        </div>
+    </div>
+</section>

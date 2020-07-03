@@ -10,7 +10,7 @@ import { Dog } from 'src/app/dogsModel';
 })
 export class HomeComponent implements OnInit {
 
-  dogs: Dog;
+  dogs: Dog = { message: [], status: ''};
 
   constructor(private randomDogsService: RandomDogsService) { }
 
@@ -21,7 +21,9 @@ export class HomeComponent implements OnInit {
   fetchDogs(){
     this.randomDogsService.getRandomDogs()
     .subscribe(dogs => {
+      console.log(typeof this.dogs);
       this.dogs = dogs;
+      console.log(typeof this.dogs);
     });
   }
 

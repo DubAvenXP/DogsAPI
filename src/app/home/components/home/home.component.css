@@ -1,0 +1,34 @@
+.main_posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.main_posts--item {
+    border-radius: 10px;
+    background: #f2f2f2;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.main_posts--item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.main_posts--item:hover {
+    transform: scale(1.05);
+}
+
+.main_post--description{
+    width: 95%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
