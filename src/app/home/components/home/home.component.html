@@ -2,8 +2,13 @@
     <div class="main_posts--item" *ngFor="let dog of this.dogs.message">
         <img class="main_post--img" [src]="dog" alt="">
         <div class="main_post--description">
-            <span>💖</span>
-            <button>Adoptame</button>
+            <div class="main_post--likes">
+                <button mat-icon-button color="warn">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+                <span>777</span>
+            </div>
+            <button mat-raised-button color="warn">¡Lo quiero!</button>
         </div>
     </div>
 </section>

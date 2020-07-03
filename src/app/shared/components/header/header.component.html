@@ -1,1 +1,19 @@
-<p>header works!</p>
+<mat-toolbar class="header-container" color="primary">
+    <mat-toolbar-row>
+        <div class="row between-xs middle-xs header-row header">
+            <figure class="header_nav--logoContainer">
+                <img src="https://images.vexels.com/media/users/3/142912/isolated/preview/4e17695e6ff43707fa6f1078c24d99c8-logo-de-animal-perro-negro-by-vexels.png" alt="">
+            </figure>
+            <nav>
+                <!-- routelink caracteristica importante del spa de no usarlo cada vez que cambio de pagina tendria que recargar-->
+                <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+                <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+                <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+                <a routerLink="/order" mat-raised-button [matBadge]="5" matBadgeColor="warn">
+                    <mat-icon>pets</mat-icon>
+                    My new Dogs
+                </a>
+            </nav>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

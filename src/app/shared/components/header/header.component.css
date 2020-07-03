@@ -1,0 +1,28 @@
+.header-container{
+    margin-bottom: 30px;
+}
+nav > a{
+    text-decoration: none;
+}
+nav > a.active{
+    background-color: #1b6ca8;
+}
+
+.header-row{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav--logoContainer{
+    width: 60px;
+    height: 60px;
+}
+.header_nav--logoContainer img{
+    width: 100%;
+    height: 100%;
+}

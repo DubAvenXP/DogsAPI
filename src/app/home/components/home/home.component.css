@@ -25,10 +25,14 @@
 
 .main_post--description{
     width: 95%;
-    height: 30px;
+    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+.main_post--likes{
+    display: flex;
+    align-items: center;
 }
 
